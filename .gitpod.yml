@@ -1,0 +1,8 @@
+tasks:
+  - before: make install-prerequisites
+    command: make install
+    init: make run
+
+ports:
+  - port: 3000
+    onOpen: open-preview
